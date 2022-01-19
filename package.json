@@ -1,0 +1,25 @@
+{
+  "name": "backend-airbnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gautam-8/Backend-airbnb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gautam-8/Backend-airbnb/issues"
+  },
+  "homepage": "https://github.com/Gautam-8/Backend-airbnb#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  }
+}
