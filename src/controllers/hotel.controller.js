@@ -14,5 +14,15 @@ router.get("" , async (req , res ) => {
       
    });
 
+   router.get("/:id" , async (req , res ) => {
+    try{ 
+      const hotels = await Hotel.findById(req.params.id).lean().exec();
+      return res.status(200).json(hotels);
+    }catch(e){
+      return res.status(500).json({message: e.message});
+    }
+        
+     });
+
   
  module.exports = router;
