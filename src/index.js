@@ -14,8 +14,11 @@ app.use(cors());
 
 
 const hotelscontroller = require('./controllers/hotel.controller');
+const tripscontroller = require('./controllers/trip.controller');
+
 
 app.use("/hotel",hotelscontroller);
+app.use('/trips' , tripscontroller);
 
  app.listen(port, async ()=>{
         await connect();
