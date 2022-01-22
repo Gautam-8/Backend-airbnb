@@ -24,7 +24,7 @@ const tripSchema = new mongoose.Schema({
    bedroom_size:{type:Number , required:true},
    bed_size:{type:Number , required:true},
    bathroom_size:{type:Number , required:true},
-   name : {type:Number , required:true},
+   name : {type:String , required:true},
 },
 {
 versionKey:false,
