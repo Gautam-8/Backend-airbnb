@@ -32,6 +32,15 @@ router.get("/:name" , async (req , res ) => {
           return res.status(500).json({ message: e.message, status: "Failed" });
         }
       });
+
+      router.delete("/:id", async (req, res) => {
+        try {
+          const trip = await Trip.findByIdAndDelete(req.params.id);
+           return res.status(201).send(trip);
+        } catch (e) {
+          return res.status(500).json({ message: e.message, status: "Failed" });
+        }
+      });
   
 
  module.exports = router;
